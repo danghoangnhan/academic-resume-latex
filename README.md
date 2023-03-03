@@ -1,4 +1,4 @@
-# Ran Cheng's Academic Resume Latex Template
+# Daniel Du's Academic Resume Latex Template
 
 This is a template for academic resume use, offered QR code and some svg graphes, print friendly, hope it helps.
 
