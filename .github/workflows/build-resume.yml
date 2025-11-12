@@ -2,7 +2,7 @@ name: Build and Publish Resume PDF
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   workflow_dispatch:
 
 permissions:

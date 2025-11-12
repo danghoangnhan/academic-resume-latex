@@ -1,23 +1,54 @@
-# Daniel Du's Academic Resume Latex Template
+# Academic Resume LaTeX Template
 
-This is a template for academic resume use, offered QR code and some svg graphes, print friendly, hope it helps.
+A clean, professional LaTeX template for academic resumes featuring QR codes, SVG graphics, and print-friendly formatting.
 
----
+## Features
 
-If you want to customize your color and style, here's all the trick you need to do:
+- 📄 Clean and professional academic resume layout
+- 🎨 Customizable colors and styling
+- 📱 QR code integration for contact information
+- 🖼️ SVG graphics support
+- 🖨️ Print-friendly design
+- ⚡ Easy to customize and maintain
 
- - edit your own color `\definecolor{linkblue}{RGB}{111, 153, 222}`
- - download svg icon from here: [icons](https://freeicons.io)
- - download QR code svg from here: [QR](https://www.the-qrcode-generator.com/)
- - change color of svg file:
-   - open svg with text editor
-   - find the path tag: `<path d="M228.065,125.587l-51`
-   - add your color like this: `<path style="fill:#AB7C94;" d="M228.065,125.587l-51`
- - convert all the svg file to pdf: [converter](https://cloudconvert.com/svg-to-pdf)
-
+## Preview
 
 <p align="center">
-  <img src="imgs/cv.png" alt="cv" width="600" />
+  <img src="imgs/cv.png" alt="Academic Resume Preview" width="600" />
 </p>
 
-This code is for non-commercial use; please see the [license file](LICENSE) for terms.
+## Quick Start
+
+1. Clone this repository
+2. Edit `resume.tex` with your personal information
+3. Compile with LaTeX to generate your PDF resume
+
+## Customization Guide
+
+### Changing Colors
+
+Edit the color definitions in your LaTeX file:
+```latex
+\definecolor{linkblue}{RGB}{111, 153, 222}
+```
+
+### Adding Icons
+
+1. Download SVG icons from [FreeIcons.io](https://freeicons.io)
+2. Customize icon colors by editing the SVG file:
+   - Open the SVG file in a text editor
+   - Find the path tag: `<path d="M228.065,125.587l-51...`
+   - Add your custom color: `<path style="fill:#AB7C94;" d="M228.065,125.587l-51...`
+3. Convert SVG files to PDF using [CloudConvert](https://cloudconvert.com/svg-to-pdf)
+
+### Adding QR Codes
+
+Generate QR codes for contact information using [The QR Code Generator](https://www.the-qrcode-generator.com/) and follow the same SVG customization process above.
+
+## Acknowledgments
+
+This template is inspired by and references the excellent work from [academic-resume-latex](https://github.com/rancheng/academic-resume-latex) by rancheng.
+
+## License
+
+This code is for non-commercial use. Please see the [LICENSE](LICENSE) file for complete terms and conditions.
