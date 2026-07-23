@@ -144,7 +144,7 @@ Ai Engineer, Software Engineer
 \shorterSection{\textcolor{titleblue}{Development Skill}}
   \resumeSubHeadingListStart
     \small{
-    \item{\textbf{Programming Language}{: Python, C++, Java, Golang}
+    \item{\textbf{Programming Language}{: Python, C++, Java, Golang, Rust}
     \hfill
     \textbf{Devops}{: Docker, Jenkins, AWS CDK, GCP}}
     \vspace{-8pt}
@@ -152,7 +152,7 @@ Ai Engineer, Software Engineer
     \hfill
     \textbf{Mobile}{: Android Studio}}
     \vspace{-8pt}
-    \item{\textbf{Database}{: Mysql, Mongodb, Redis, Kafka}
+    \item{\textbf{Database}{: Mysql, Mongodb, Redis, Kafka, RabbitMQ}
     \hfill
     \textbf{Version Control}{: Git}}
     \vspace{-8pt}
@@ -267,6 +267,19 @@ Integrated OCR algorithms and document understanding models in containerized mic
     \resumeSubItem{CB-STM Test Implementation}{ Developed an Android mobile application for early Mild Cognitive Impairment (MCI) detection. Engineered real-time user behavior tracking system using SQLite database and implemented ML models optimized with ONNX for on-device predictions. Successfully processed 1000+ assessments and demonstrated at Taiwan HealthCare Expo 2023  (\href{https://www.chinatimes.com/realtimenews/20221205001624-260421?chdtv}{\textcolor{linkblue}{link}})}
     \resumeSubHeadingListEnd
     \fill
+
+%-----------OPEN SOURCE CONTRIBUTIONS-----------------
+\shorterSection{\textcolor{titleblue}{Open Source Contributions}}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Pathway --- Real-Time Data Framework (\href{https://github.com/pathwaycom/pathway}{\textcolor{linkblue}{github}})}
+      {Contributed two \textbf{merged} native connectors to \href{https://pathway.com}{\textcolor{linkblue}{Pathway}}, an open-source Python/Rust streaming-data framework.
+      \begin{itemize}
+        \item \textbf{Microsoft SQL Server connector} (\texttt{pw.io.mssql}): pure-Rust TDS implementation via \texttt{tiberius} (no ODBC drivers); static-polling and Change Data Capture (CDC) streaming reads, snapshot / change-stream writes, and full SQL Server type mapping (\href{https://github.com/pathwaycom/pathway/pull/205}{\textcolor{linkblue}{PR \#205}}).
+        \item \textbf{RabbitMQ Streams connector} (\texttt{pw.io.rabbitmq}): native read/write on \texttt{rabbitmq-stream-client} with TLS, AMQP 1.0 message keys, and parallel readers; shipped an end-to-end RabbitMQ $\rightarrow$ Pathway $\rightarrow$ PostgreSQL ETL example (\href{https://github.com/pathwaycom/pathway/pull/207}{\textcolor{linkblue}{PR \#207}}).
+        \item Authored Python $\leftrightarrow$ Rust bindings (\textbf{PyO3}); the MSSQL connector now underpins further community contributions.
+      \end{itemize}
+      }
+  \resumeSubHeadingListEnd
 
 % -----------Addtional Experience & Achievements-----------------
 \shorterSection{\textcolor{titleblue}{Publications}}
